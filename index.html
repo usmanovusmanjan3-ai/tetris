@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tetris</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="game">
+
+    <h1>🧱 TETRIS</h1>
+
+    <div class="info">
+
+        <div class="info-box">
+            🏆 SCORE
+            <span id="score">0</span>
+        </div>
+
+        <div class="info-box">
+            🧹 LINES
+            <span id="lines">0</span>
+        </div>
+
+    </div>
+
+
+    <canvas
+        id="board"
+        width="300"
+        height="600">
+    </canvas>
+
+
+    <div class="controls">
+
+        <button id="left">
+            ⬅
+        </button>
+
+        <button id="rotate">
+            🔄
+        </button>
+
+        <button id="down">
+            ⬇
+        </button>
+
+        <button id="right">
+            ➡
+        </button>
+
+    </div>
+
+
+    <button
+        id="restart"
+        class="restart">
+        🔄 QAYTA BOSHLASH
+    </button>
+
+
+    <div
+        id="gameOver"
+        class="game-over">
+
+        <h2>💀 GAME OVER</h2>
+
+        <p>
+            Sizning balingiz:
+            <strong id="finalScore">0</strong>
+        </p>
+
+        <button id="restart2">
+            🔄 QAYTA O'YNASH
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
